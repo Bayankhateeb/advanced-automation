@@ -1,2 +1,1 @@
-"# advanced-automation-course" 
-"# advanced-automation-course" 
+"# Automation-JS" 
