@@ -14,9 +14,9 @@ function
 
 */
 
-let myName = "Bayan"
+// let myName = "Bayan"
 
-let myAge = 25
+// let myAge = 25
 
 //for (let i =0; i<10 ; i++) {
 //console.log(i)
@@ -62,19 +62,30 @@ let myAge = 25
 
 
 
-let mystudents = ["ahmad" , "ali" , "anas","omar"] 
-let mystudentsmar = [60,40,30,88]
+let mystudents = ["ahmad" , "ali" , "anas","omar" , 99]; 
+let mystudentsmar = [60,40,30,88 , "abdullah"];
 
-function markCalculate(params) {
-    for(let i=0 ; i< mystudents.length ; i++ ){
-        console.log(mystudents[i])
-
-
-    } 
+ function markCalculate(params) {
     for(let k = 0 ; k<mystudentsmar.length ; k++){
-console.log(mystudentsmar[k])
+        if(mystudentsmar[k]>=50){
+            console.log(
+            "cong" + " "+mystudents[k] + 
+            " " +"you scored" +" " +mystudentsmar[k] +
+            " " + "and you have passed "
+            ) ; 
+
+        } else if(mystudentsmar[k]<50){
+            console.log("sorry" + " "+mystudents[k] + 
+            " " +"you scored" +" " +mystudentsmar[k] +
+            " " + "and you have failed");
+
+        } else{
+            console.log("please enter a valid number between 0 and 100"); 
+        }
 
     }
 } 
+markCalculate();
 
-markCalculate()
+
+
